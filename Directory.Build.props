@@ -25,7 +25,7 @@
         <SelfContained>false</SelfContained>
         <PublishSingleFile>false</PublishSingleFile>
         <EnableRequestDelegateGenerator>true</EnableRequestDelegateGenerator>
-        <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:8.0-jammy-chiseled-extra</ContainerBaseImage>
+        <!-- <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:8.0-jammy-chiseled-extra</ContainerBaseImage> -->
         <PublishTrimmed>false</PublishTrimmed>
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
         <TrimMode>none</TrimMode>
