@@ -18,6 +18,10 @@ dotnet publish BlazorDotnetEight/BlazorDotnetEight/BlazorDotnetEight.csproj  -p:
 dotnet publish BlazorDotnetEight/BlazorDotnetEight/BlazorDotnetEight.csproj  -p:PublishProfile=BlazorDotnetEight/BlazorDotnetEight/Properties/PublishProfiles/github.pubxml -c Release 
 ```
 
+### To authenticate to GitHub Container Registry, you can use the docker login command
+
+echo "<token>" | docker login ghcr.io -u L-Sypniewski --password-stdin
+
 ## Run locally build docker image
 
 ```sh
