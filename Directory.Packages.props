@@ -1,0 +1,19 @@
+<Project>
+    <PropertyGroup>
+        <!-- Enable central package management -->
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <Using Include="System" />
+    </ItemGroup>
+    <ItemGroup>
+        <!-- Global dependencies -->
+        <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.6.2" />
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.6.2" />
+        <!-- Blazor -->
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
+    </ItemGroup>
+</Project>
