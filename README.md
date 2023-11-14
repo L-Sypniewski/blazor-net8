@@ -9,7 +9,13 @@ dotnet new blazor -n BlazorDotnetEight -int Auto -au None
 ## Build docker image locally
 
 ```sh
-dotnet publish BlazorDotnetEight/BlazorDotnetEight/BlazorDotnetEight.csproj  -p:PublishProfile=BlazorDotnetEight/BlazorDotnetEight/Properties/PublishProfiles/local.pubxml -c Debug 
+dotnet publish BlazorDotnetEight/BlazorDotnetEight/BlazorDotnetEight.csproj  -p:PublishProfile=BlazorDotnetEight/BlazorDotnetEight/Properties/PublishProfiles/local.pubxml -c Release 
+```
+
+## Build docker image to Github Packages
+
+```sh
+dotnet publish BlazorDotnetEight/BlazorDotnetEight/BlazorDotnetEight.csproj  -p:PublishProfile=BlazorDotnetEight/BlazorDotnetEight/Properties/PublishProfiles/github.pubxml -c Release 
 ```
 
 ## Run locally build docker image
